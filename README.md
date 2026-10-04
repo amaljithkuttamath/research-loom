@@ -56,6 +56,46 @@ The installer copies all ten skills into the selected host's personal skills dir
 
 The repository also has a Claude plugin manifest. Local plugin loading is available with `claude --plugin-dir .`; plugin commands are namespaced, for example `/research-loom:research-loom`. You do not need plugin loading when using the personal-skill installer.
 
+## Use it
+
+Open your research project in Claude Code or Codex, invoke the skill, and describe the question and output you want. For example:
+
+```text
+Use Research Loom in this project to investigate methods for extracting
+clinical trial outcomes from research papers. First help me narrow the question.
+Produce a practical evidence brief. For every paper, explain the method,
+how it was validated, whether that validation fits my topic, and any gaps.
+Triage the gaps with a reason and next action. Save the source ledger here.
+```
+
+For the Claude marketplace plugin, start with `/research-loom:research-loom`. In Codex, invoke `$research-loom`. Directly installed Claude skills use `/research-loom`.
+
+Answer the agent's topic and goal questions, then agree on one focused question per goal. The agent plans relevant searches using available tools and returns a synthesis with source links, methods, validation, disagreements, and access limits. A brief finishes at synthesis; ask explicitly if you also want an outline or manuscript.
+
+Steer the work at any time in ordinary language:
+
+```text
+Focus on methods validated on medical papers. Keep news-domain evidence
+as background. Shorten the final brief to 500 words.
+```
+
+To continue in a later session, open the same project and ask:
+
+```text
+Use Research Loom to resume this project's saved research.
+Read .research-loom/config.json and state.json, preserve existing evidence,
+and continue from the next unfinished task.
+```
+
+To change a stage skill and remember it for this project, say:
+
+```text
+Use my available synthesis skill for the synthesis stage and save that
+choice in this project. Keep the other stage choices.
+```
+
+The chosen skill must already be available in your host. Browse/search access depends on the host; when it is unavailable, supply papers and ask for a synthesis bounded to those sources.
+
 ## Project memory
 
 The agent maintains this folder inside your selected research project:
