@@ -16,7 +16,7 @@ Decision: scoped v0.1.0 pilot release; required checked paths pass after fixes. 
 - A namespaced Claude plugin invocation also succeeded and entered interviewing for the new project.
 - An isolated Claude marketplace installation succeeded and reported all 10 skills. No hooks, agents, MCP servers, or LSP servers are included. Marketplace and plugin manifests pass strict validation with no warnings.
 
-- Codex registered the local catalog and installed `research-loom@research-loom` version 0.1.0 through its native plugin CLI. Remote GitHub installation is verified separately after publication.
+- Codex registered the local catalog and installed `research-loom@research-loom` version 0.1.0 through its native plugin CLI. After publication, both Codex and Claude Code registered `amaljithkuttamath/research-loom` and successfully installed `research-loom@research-loom` from its remote marketplace. Claude reported all 10 skills.
 
 ## Defects found and fixed
 
@@ -40,3 +40,7 @@ The pilot includes its eval skill, fixtures, and failures so changes can be eval
 - [OpenWiki DeepSWE](https://github.com/langchain-ai/openwiki/tree/main/evals/deepswe): paired controlled runs.
 - [OpenWiki LEDGER](https://github.com/langchain-ai/openwiki/tree/main/evals/ledger): longitudinal claim audits.
 - [Agent Skills evaluation guidance](https://agentskills.io/skill-creation/evaluating-skills): observable outputs, baselines, and iteration.
+
+## Publication
+
+Published publicly at https://github.com/amaljithkuttamath/research-loom. GitHub rejected the first push because the current OAuth token cannot upload Actions workflows. The optional workflow was moved to `ci-template.yml`; all plugin code and evals were then pushed successfully. No CI run is claimed. Repository marketplaces are installed in both hosts; no official-directory acceptance is implied.
