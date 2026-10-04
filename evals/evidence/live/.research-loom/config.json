@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "project_id": "c27cb5b0-c32e-4a0b-9c79-73c54f8db22f",
+  "stages": {
+    "interview": "research-loom-interview",
+    "narrow": "research-loom-narrow",
+    "search-plan": "research-loom-search-plan",
+    "synthesize": "research-loom-synthesize",
+    "outline": "research-loom-outline",
+    "draft": "research-loom-draft",
+    "review": "research-loom-review"
+  },
+  "search_branches": [
+    {
+      "id": "discovery",
+      "skill": "research-loom-search",
+      "source": "auto"
+    }
+  ],
+  "goals": [
+    {
+      "id": "g1",
+      "question": "How does LangChain OpenWiki separate agent research from durable queue and claim bookkeeping?",
+      "search_branches": [
+        {
+          "id": "ownership",
+          "skill": "research-loom-search",
+          "source": "site-limited web search of github.com/langchain-ai/openwiki"
+        },
+        {
+          "id": "durability",
+          "skill": "research-loom-search",
+          "source": "site-limited web search of github.com/langchain-ai/openwiki"
+        }
+      ],
+      "notes": "Simulated user fixture; no assertion of real user confirmation."
+    }
+  ],
+  "project_root": "<WORKSPACE>/work/loom-live-audit"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "project_id": "",
+  "stages": {
+    "interview": "research-loom-interview",
+    "narrow": "research-loom-narrow",
+    "search-plan": "research-loom-search-plan",
+    "synthesize": "research-loom-synthesize",
+    "outline": "research-loom-outline",
+    "draft": "research-loom-draft",
+    "review": "research-loom-review"
+  },
+  "search_branches": [
+    {
+      "id": "discovery",
+      "skill": "research-loom-search",
+      "source": "auto"
+    }
+  ],
+  "goals": []
+}

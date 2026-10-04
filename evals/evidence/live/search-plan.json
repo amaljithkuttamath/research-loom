@@ -1,0 +1,34 @@
+{
+  "goal_id": "g1",
+  "question": "How does LangChain OpenWiki separate agent research from durable queue and claim bookkeeping?",
+  "fixture": true,
+  "deliverable": "short auditable synthesis brief; no paper",
+  "branches": [
+    {
+      "id": "ownership",
+      "skill": "research-loom-search",
+      "source": "site-limited web search of github.com/langchain-ai/openwiki",
+      "purpose": "Establish model versus bookkeeping ownership",
+      "query": "site:github.com/langchain-ai/openwiki \"host-driven\" \"durable queue\"",
+      "filters": {
+        "site": "github.com/langchain-ai/openwiki"
+      },
+      "stopping_criterion": "One inspected official overview with explicit ownership boundary"
+    },
+    {
+      "id": "durability",
+      "skill": "research-loom-search",
+      "source": "site-limited web search of github.com/langchain-ai/openwiki",
+      "purpose": "Check sparse claims and durability gates",
+      "query": "site:github.com/langchain-ai/openwiki \"submit_page\" \"claims\" \"pending\"",
+      "filters": {
+        "site": "github.com/langchain-ai/openwiki"
+      },
+      "stopping_criterion": "Inspect official claims documentation and implementation for queue completion gate"
+    }
+  ],
+  "limitations": [
+    "Plan recorded after searches in this dogfood; do not claim protocol compliance.",
+    "Search interface is general web search with site restriction, not GitHub API."
+  ]
+}

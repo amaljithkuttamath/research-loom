@@ -1,0 +1,25 @@
+{
+  "name": "research-loom",
+  "version": "0.1.0",
+  "description": "Configurable research skills with project memory, auditable evidence, and release evaluations.",
+  "author": {
+    "name": "Amaljith Kuttamath"
+  },
+  "repository": "https://github.com/amaljithkuttamath/research-loom",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Research Loom",
+    "shortDescription": "Interview, research, and audit evidence with project memory",
+    "developerName": "Amaljith Kuttamath",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Help me narrow my research topic and plan the searches."
+    ]
+  }
+}

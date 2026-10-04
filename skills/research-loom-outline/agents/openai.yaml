@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Outline"
+  short_description: "Use when building an academic paper outline from an agreed r"
+  default_prompt: "Use $research-loom-outline for the current research project."

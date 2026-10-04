@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "goal_records_separate": true,
+    "goal_questions_distinct": true,
+    "artifact_references_exist": true,
+    "no_search_completion_claim": true,
+    "confirmation_explicitly_simulated": true,
+    "vague_answer_received_followup": true,
+    "no_forced_empirical_results": true,
+    "seven_concrete_source_branches": true,
+    "separate_project_has_no_inherited_goals": true
+  },
+  "passed": 9,
+  "total": 9,
+  "limits": [
+    "Artifact integrity checks on one same-model, explicitly invoked skill walkthrough.",
+    "No automatic trigger test, external runtime, no-skill comparison, repeated trials, empirical research search, or real user interview.",
+    "Manual project initialization; resolver tests belong to parent agent."
+  ],
+  "grader_correction": "Initial row-prefix count included the Goal header. Corrected matcher counts goal-ID branch rows only; the first failure was a grader defect, not a skill defect."
+}

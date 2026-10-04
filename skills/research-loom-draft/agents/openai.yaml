@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Draft"
+  short_description: "Use when drafting research-paper sections from an evidence-l"
+  default_prompt: "Use $research-loom-draft for the current research project."

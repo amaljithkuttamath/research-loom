@@ -1,0 +1,11 @@
+{
+  "interrupted_artifact_not_false_complete": true,
+  "brief_finished_at_synthesis": true,
+  "no_paper_nodes": true,
+  "selection_change_preserved_state_before_missing_branch": true,
+  "selection_change_preserved_research_bytes": true,
+  "missing_skill_branch_blocked": true,
+  "no_search_fabricated": true,
+  "environment_override_in_run_metadata": true,
+  "environment_not_persisted_by_resolver": true
+}

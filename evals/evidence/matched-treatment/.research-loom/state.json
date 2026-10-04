@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "project_id": "c12816c9-eda8-4159-b9ca-4754b22cb3ea",
+  "brief": {
+    "path": "interview-brief.md",
+    "answers": "transcript.md",
+    "simulation": true
+  },
+  "confirmed_questions": {
+    "G1": {
+      "question": "For maintainers of small Python repositories, which AI coding-agent configurations best support correct issue fixes within a limited maintainer review budget?",
+      "revision": 1,
+      "confirmation": "simulated turn 3",
+      "path": "questions.md"
+    },
+    "G2": {
+      "question": "For issue-fix tasks in small Python repositories, does an agent-assisted workflow reduce total maintainer effort per correct accepted fix compared with a maintainer-only workflow?",
+      "revision": 1,
+      "confirmation": "simulated turn 3",
+      "path": "questions.md"
+    }
+  },
+  "nodes": {
+    "all:interview:1": {
+      "run_id": "1ff7f261-94eb-4120-852f-e478bb8a794e",
+      "attempt_id": "33d71534-3efd-413e-a81a-ba739c025ec5",
+      "question_revision": 1,
+      "goal_ids": [
+        "G1",
+        "G2"
+      ],
+      "selected_skill": "research-loom-interview",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/skills/research-loom-interview/SKILL.md",
+      "skill_content_hash": "ac2019f4954138cc3342a48402b4d3b5d4aed7d6139d6921632908e70c5bf550",
+      "input_paths": [
+        "transcript.md"
+      ],
+      "input_fingerprints": {
+        "transcript.md": "fa3adda1262ee11dc5b3adad2d7dd40a60edfd33aa66193c0729f7838fd2d00f"
+      },
+      "output_paths": [
+        "interview-brief.md"
+      ],
+      "status": "complete",
+      "upstream_dependencies": [],
+      "effective_configuration": {
+        "version": 1,
+        "project_id": "c12816c9-eda8-4159-b9ca-4754b22cb3ea",
+        "stages": {
+          "interview": "research-loom-interview",
+          "narrow": "research-loom-narrow",
+          "search-plan": "research-loom-search-plan",
+          "synthesize": "research-loom-synthesize",
+          "outline": "research-loom-outline",
+          "draft": "research-loom-draft",
+          "review": "research-loom-review"
+        },
+        "search_branches": [
+          {
+            "id": "discovery",
+            "skill": "research-loom-search",
+            "source": "auto"
+          }
+        ],
+        "goals": [
+          {
+            "id": "G1",
+            "priority": 1,
+            "question": "For maintainers of small Python repositories, which AI coding-agent configurations best support correct issue fixes within a limited maintainer review budget?"
+          },
+          {
+            "id": "G2",
+            "priority": 2,
+            "question": "For issue-fix tasks in small Python repositories, does an agent-assisted workflow reduce total maintainer effort per correct accepted fix compared with a maintainer-only workflow?"
+          }
+        ],
+        "project_root": "<WORKSPACE>/work/loom-matched-treatment"
+      },
+      "timestamp": "2026-10-04T18:56:50.252771+00:00",
+      "evidence_access_limits": "Simulation; no live searches or source findings. Exact interface syntax/access unverified.",
+      "unresolved_gaps": [
+        "candidate configurations",
+        "small-repository rule",
+        "review budget",
+        "participant/data access"
+      ],
+      "next_action": "Resolve scope parameters and verify interfaces before user-requested execution."
+    },
+    "all:narrow:1": {
+      "run_id": "1ff7f261-94eb-4120-852f-e478bb8a794e",
+      "attempt_id": "fb468e5f-5b18-4d4d-aa2b-3463ceda72ff",
+      "question_revision": 1,
+      "goal_ids": [
+        "G1",
+        "G2"
+      ],
+      "selected_skill": "research-loom-narrow",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/skills/research-loom-narrow/SKILL.md",
+      "skill_content_hash": "b19b199d8bd9d9f24724a9f1bc12d704c26aa6fb45d60488079dfa13f0b0f337",
+      "input_paths": [
+        "interview-brief.md"
+      ],
+      "input_fingerprints": {
+        "interview-brief.md": "482b9cb8e08e451c046a3cd39c364c63e9d5973333002713af1d18bcd0ce944c"
+      },
+      "output_paths": [
+        "questions.md"
+      ],
+      "status": "complete",
+      "upstream_dependencies": [
+        "all:interview:1"
+      ],
+      "effective_configuration": {
+        "version": 1,
+        "project_id": "c12816c9-eda8-4159-b9ca-4754b22cb3ea",
+        "stages": {
+          "interview": "research-loom-interview",
+          "narrow": "research-loom-narrow",
+          "search-plan": "research-loom-search-plan",
+          "synthesize": "research-loom-synthesize",
+          "outline": "research-loom-outline",
+          "draft": "research-loom-draft",
+          "review": "research-loom-review"
+        },
+        "search_branches": [
+          {
+            "id": "discovery",
+            "skill": "research-loom-search",
+            "source": "auto"
+          }
+        ],
+        "goals": [
+          {
+            "id": "G1",
+            "priority": 1,
+            "question": "For maintainers of small Python repositories, which AI coding-agent configurations best support correct issue fixes within a limited maintainer review budget?"
+          },
+          {
+            "id": "G2",
+            "priority": 2,
+            "question": "For issue-fix tasks in small Python repositories, does an agent-assisted workflow reduce total maintainer effort per correct accepted fix compared with a maintainer-only workflow?"
+          }
+        ],
+        "project_root": "<WORKSPACE>/work/loom-matched-treatment"
+      },
+      "timestamp": "2026-10-04T18:56:50.252771+00:00",
+      "evidence_access_limits": "Simulation; no live searches or source findings. Exact interface syntax/access unverified.",
+      "unresolved_gaps": [
+        "candidate configurations",
+        "small-repository rule",
+        "review budget",
+        "participant/data access"
+      ],
+      "next_action": "Resolve scope parameters and verify interfaces before user-requested execution."
+    },
+    "all:search-plan:1": {
+      "run_id": "1ff7f261-94eb-4120-852f-e478bb8a794e",
+      "attempt_id": "2ab09e51-40ad-429e-9a13-fb128b30db89",
+      "question_revision": 1,
+      "goal_ids": [
+        "G1",
+        "G2"
+      ],
+      "selected_skill": "research-loom-search-plan",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/skills/research-loom-search-plan/SKILL.md",
+      "skill_content_hash": "8119a04708a4780b814dcaa9b42178b088e9489c6722b765bf5968e0024841e7",
+      "input_paths": [
+        "questions.md"
+      ],
+      "input_fingerprints": {
+        "questions.md": "79a563eb8430018ec5d313cc26f38756488ddaf243dc5bada6cb39d04c3b33d4"
+      },
+      "output_paths": [
+        "search-plan.md"
+      ],
+      "status": "complete",
+      "upstream_dependencies": [
+        "all:narrow:1"
+      ],
+      "effective_configuration": {
+        "version": 1,
+        "project_id": "c12816c9-eda8-4159-b9ca-4754b22cb3ea",
+        "stages": {
+          "interview": "research-loom-interview",
+          "narrow": "research-loom-narrow",
+          "search-plan": "research-loom-search-plan",
+          "synthesize": "research-loom-synthesize",
+          "outline": "research-loom-outline",
+          "draft": "research-loom-draft",
+          "review": "research-loom-review"
+        },
+        "search_branches": [
+          {
+            "id": "discovery",
+            "skill": "research-loom-search",
+            "source": "auto"
+          }
+        ],
+        "goals": [
+          {
+            "id": "G1",
+            "priority": 1,
+            "question": "For maintainers of small Python repositories, which AI coding-agent configurations best support correct issue fixes within a limited maintainer review budget?",
+            "search_branches": [
+              {
+                "id": "g1-evaluation",
+                "skill": "research-loom-search",
+                "source": "Semantic Scholar and OpenAlex discovery; original publisher/preprint records after discovery"
+              },
+              {
+                "id": "g1-artifacts",
+                "skill": "research-loom-search",
+                "source": "Original benchmark repositories/dataset documentation and official agent documentation, discovered via general web search"
+              },
+              {
+                "id": "g1-counterevidence",
+                "skill": "research-loom-search",
+                "source": "ACM Digital Library discovery and general web search of original maintainer reports/repositories"
+              }
+            ]
+          },
+          {
+            "id": "G2",
+            "priority": 2,
+            "question": "For issue-fix tasks in small Python repositories, does an agent-assisted workflow reduce total maintainer effort per correct accepted fix compared with a maintainer-only workflow?",
+            "search_branches": [
+              {
+                "id": "g2-workflows",
+                "skill": "research-loom-search",
+                "source": "Semantic Scholar and ACM Digital Library discovery; original full text where accessible"
+              },
+              {
+                "id": "g2-methods",
+                "skill": "research-loom-search",
+                "source": "ACM Digital Library and IEEE Xplore discovery; institutional author copies where available"
+              },
+              {
+                "id": "g2-counterevidence",
+                "skill": "research-loom-search",
+                "source": "Semantic Scholar/OpenAlex discovery and original institutional/preprint resources"
+              }
+            ]
+          }
+        ],
+        "project_root": "<WORKSPACE>/work/loom-matched-treatment"
+      },
+      "timestamp": "2026-10-04T18:56:50.252771+00:00",
+      "evidence_access_limits": "Simulation; no live searches or source findings. Exact interface syntax/access unverified.",
+      "unresolved_gaps": [
+        "candidate configurations",
+        "small-repository rule",
+        "review budget",
+        "participant/data access"
+      ],
+      "next_action": "Resolve scope parameters and verify interfaces before user-requested execution."
+    }
+  },
+  "active_node": null,
+  "next_action": "Search execution deferred per simulated user; resolve material scope parameters and verify source interfaces if execution is requested."
+}

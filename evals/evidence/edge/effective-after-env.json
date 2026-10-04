@@ -1,0 +1,31 @@
+{
+  "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+  "project_root": "<WORKSPACE>/work/loom-release-edge",
+  "goal_id": "goal-brief",
+  "stages": {
+    "interview": "research-loom-interview",
+    "narrow": "research-loom-narrow",
+    "search-plan": "research-loom-search-plan",
+    "synthesize": "research-loom-synthesize",
+    "outline": "research-loom-outline",
+    "draft": "research-loom-draft",
+    "review": "research-loom-review"
+  },
+  "search_branches": [
+    {
+      "id": "discovery",
+      "skill": "research-loom-search",
+      "source": "auto"
+    }
+  ],
+  "selection_origins": {
+    "interview": "project",
+    "narrow": "project",
+    "search-plan": "project",
+    "synthesize": "project",
+    "outline": "project",
+    "draft": "project",
+    "review": "project"
+  },
+  "environment_overrides": {}
+}

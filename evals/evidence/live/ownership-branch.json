@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "id": "paper-readme",
+      "title": "OpenWiki README",
+      "authors": [],
+      "identifiers": {
+        "repository": "langchain-ai/openwiki",
+        "path": "README.md"
+      },
+      "source_type": "repository_documentation",
+      "notes": "Nonacademic primary source; authors not inferred from repository ownership. Inspected relevant full-text sections, not every line. Mutable main reference; no pinned commit recovered.",
+      "versions": [
+        {
+          "id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/README.md",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T18:42:57.769929+00:00",
+          "inspected_locators": "L86-L91; L282-L308"
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "id": "search-001",
+      "goal_id": "g1",
+      "branch_id": "ownership",
+      "source": "site-limited web search of github.com/langchain-ai/openwiki",
+      "query": "site:github.com/langchain-ai/openwiki \"host-driven\" \"durable queue\"",
+      "status": "executed",
+      "executed_at": "2026-10-04T18:41:00Z",
+      "timestamp_note": "Approximate minute-level execution time bracketed by the subsequent clock reading of 18:41:21 UTC; not exact tool telemetry.",
+      "interface": "web.run search_query",
+      "filters": {
+        "site": "github.com/langchain-ai/openwiki"
+      },
+      "hits": [
+        {
+          "paper_id": "paper-readme",
+          "version_id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/README.md"
+        }
+      ],
+      "selection_rationale": "Selected official repository material returned in actual query results; other results omitted as unrelated or duplicate. Not exhaustive."
+    }
+  ],
+  "claims": [],
+  "goal_id": "g1",
+  "branch_id": "ownership",
+  "limits": [
+    "Site-restricted search; no exhaustive corpus claim."
+  ]
+}

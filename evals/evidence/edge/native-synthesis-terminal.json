@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+  "brief": {
+    "deliverable": "research brief",
+    "purpose": "Summarize a supplied synthetic fixture for a release check",
+    "simulation": true
+  },
+  "confirmed_questions": {
+    "goal-brief": {
+      "question": "What does the supplied fictional fixture report about color preference?",
+      "revision": 1,
+      "confirmed": true,
+      "confirmation": "Simulated user: Yes, summarize exactly this fixture only."
+    }
+  },
+  "nodes": {
+    "goal-brief:synthesize:1": {
+      "status": "pending",
+      "selected_skill": "research-loom-synthesize",
+      "output_paths": [
+        "artifacts/interrupted-brief.md"
+      ],
+      "goal_id": "goal-brief",
+      "run_id": "edge-interrupted",
+      "attempt_id": "attempt-1",
+      "question_revision": 1,
+      "dependencies": [],
+      "started_at": "2026-10-04T18:41:53.739341+00:00",
+      "interruption_validation": "Artifact inspected: truncated sentence; lacks answer, claim-evidence map and limitations. Incomplete attempt, not complete.",
+      "superseded_by": "goal-brief:synthesize:2"
+    },
+    "goal-brief:synthesize:2": {
+      "status": "complete",
+      "selected_skill": "research-paper-workflow",
+      "resolved_skill_path": "/Users/amal/.codex/skills/research-paper-workflow/SKILL.md",
+      "skill_sha256": "6e31cb2f88b729c607e289972b9c015ab5a2949c6da24e0501822aba65a653ce",
+      "goal_id": "goal-brief",
+      "run_id": "edge-env-terminal",
+      "attempt_id": "attempt-2",
+      "question_revision": 1,
+      "dependencies": [],
+      "input_fingerprints": {
+        "artifacts/fixture-source.txt": "947d543239a3010de4117de73dbee8d4b477f5700fce5ecaa83e16c668e9c71b"
+      },
+      "effective_configuration": {
+        "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+        "project_root": "<WORKSPACE>/work/loom-release-edge",
+        "goal_id": "goal-brief",
+        "stages": {
+          "interview": "research-loom-interview",
+          "narrow": "research-loom-narrow",
+          "search-plan": "research-loom-search-plan",
+          "synthesize": "research-paper-workflow",
+          "outline": "research-loom-outline",
+          "draft": "research-loom-draft",
+          "review": "research-loom-review"
+        },
+        "search_branches": [
+          {
+            "id": "discovery",
+            "skill": "research-loom-search",
+            "source": "auto"
+          }
+        ],
+        "selection_origins": {
+          "interview": "project",
+          "narrow": "project",
+          "search-plan": "project",
+          "synthesize": "environment",
+          "outline": "project",
+          "draft": "project",
+          "review": "project"
+        },
+        "environment_overrides": {
+          "RLOOM_STAGE_SYNTHESIZE": "research-paper-workflow"
+        }
+      },
+      "output_paths": [
+        "artifacts/completed-brief.md",
+        ".research-loom/research.json"
+      ],
+      "started_at": "2026-10-04T18:42:34.259641+00:00",
+      "limits": [
+        "synthetic fixture only",
+        "abstract only",
+        "no live search"
+      ],
+      "completed_at": "2026-10-04T18:43:06.224029+00:00",
+      "validation": "Actual brief inspected against supplied abstract; counts and scope correct; research_data.py validate passed; evidence is synthetic and abstract-limited."
+    },
+    "goal-brief:search:unavailable:1": {
+      "status": "blocked",
+      "goal_id": "goal-brief",
+      "branch_id": "unavailable",
+      "selected_skill": "research-loom-nonexistent-edge-20261004",
+      "run_id": "edge-missing-selection",
+      "attempt_id": "attempt-1",
+      "question_revision": 1,
+      "effective_configuration": {
+        "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+        "project_root": "<WORKSPACE>/work/loom-release-edge",
+        "goal_id": "goal-brief",
+        "stages": {
+          "interview": "research-loom-interview",
+          "narrow": "research-loom-narrow",
+          "search-plan": "research-loom-search-plan",
+          "synthesize": "research-paper-workflow",
+          "outline": "research-loom-outline",
+          "draft": "research-loom-draft",
+          "review": "research-loom-review"
+        },
+        "search_branches": [
+          {
+            "id": "unavailable",
+            "skill": "research-loom-nonexistent-edge-20261004",
+            "source": "user-specified-fixture-index"
+          }
+        ],
+        "selection_origins": {
+          "interview": "project",
+          "narrow": "project",
+          "search-plan": "project",
+          "synthesize": "project",
+          "outline": "project",
+          "draft": "project",
+          "review": "project"
+        },
+        "environment_overrides": {}
+      },
+      "resolved_skill_path": null,
+      "dependencies": [],
+      "input_fingerprints": {},
+      "output_paths": [],
+      "started_at": "2026-10-04T18:43:39.100546+00:00",
+      "blocking_reason": "The selected search skill research-loom-nonexistent-edge-20261004 is unavailable in the bundle and available local skill roots. This branch is blocked; no search was executed and no substitute was selected. Choose an installed replacement or provide the missing skill.",
+      "next_action": "Await simulated user replacement choice"
+    },
+    "goal-brief:synthesize:3": {
+      "status": "complete",
+      "goal_id": "goal-brief",
+      "selected_skill": "research-loom-synthesize",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-synthesize/SKILL.md",
+      "skill_sha256": "394d69681107131c9c34d456455461eea1d9c57cf59347e6ef782b50bb7bc239",
+      "run_id": "edge-native-synthesis",
+      "attempt_id": "attempt-1",
+      "question_revision": 1,
+      "dependencies": [],
+      "input_fingerprints": {
+        ".research-loom/research.json": "f95c176415bf6323341f6e34fa61f5cf1e62953c7af1e7729eb8088bf9687283"
+      },
+      "effective_configuration": {
+        "selected_skill": "research-loom-synthesize",
+        "selection_origin": "simulated current user instruction",
+        "saved_synthesis_preference": "research-paper-workflow"
+      },
+      "output_paths": [
+        "artifacts/native-synthesis-brief.md"
+      ],
+      "started_at": "2026-10-04T18:44:09.531804+00:00",
+      "completed_at": "2026-10-04T18:44:09.531804+00:00",
+      "validation": "Fresh brief written after reading selected native synthesis skill, its evidence reference, source fixture and existing evidence ledger; claim counts, locator and coverage restrictions inspected; no paper stage added."
+    }
+  },
+  "active_node": "goal-brief:search:unavailable:1",
+  "next_action": "Await replacement for unavailable explicit search skill"
+}

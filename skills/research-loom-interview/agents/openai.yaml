@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Interview"
+  short_description: "Use when interviewing a user to understand a research topic,"
+  default_prompt: "Use $research-loom-interview for the current research project."

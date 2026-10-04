@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Loom"
+  short_description: "Use when running a configurable research workflow graph with"
+  default_prompt: "Use $research-loom for the current research project."

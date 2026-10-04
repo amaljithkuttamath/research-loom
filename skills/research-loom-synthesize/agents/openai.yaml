@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Synthesize"
+  short_description: "Use when combining research search branches into an evidence"
+  default_prompt: "Use $research-loom-synthesize for the current research project."

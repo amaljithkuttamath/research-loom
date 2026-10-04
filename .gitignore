@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.research-loom/
+.env
+.DS_Store
+!evals/evidence/**/.research-loom/
+!evals/evidence/**/.research-loom/**

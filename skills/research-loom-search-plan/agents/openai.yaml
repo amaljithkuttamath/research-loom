@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Search Plan"
+  short_description: "Use when designing source-specific research queries and mult"
+  default_prompt: "Use $research-loom-search-plan for the current research project."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Loom Eval"
+  short_description: "Test research skills and artifacts before release"
+  default_prompt: "Use $research-loom-eval to evaluate the current bundle before shipping it."

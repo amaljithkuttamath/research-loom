@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "id": "paper-fixture",
+      "title": "SYNTHETIC EVALUATION FIXTURE",
+      "authors": [],
+      "identifiers": {},
+      "notes": "Synthetic local evaluation source, not a real publication",
+      "versions": [
+        {
+          "id": "abstract-fixture",
+          "url": "file://<WORKSPACE>/work/loom-release-edge/artifacts/fixture-source.txt",
+          "publication_status": "unknown",
+          "read_level": "abstract",
+          "checked_at": "2026-10-04T18:42:34.259641+00:00"
+        }
+      ]
+    }
+  ],
+  "searches": [],
+  "claims": [
+    {
+      "id": "claim-fixture-1",
+      "goal_id": "goal-brief",
+      "text": "The synthetic abstract reports 6 of 10 fictional respondents preferred blue and 4 preferred green.",
+      "status": "supported",
+      "evidence": [
+        {
+          "paper_id": "paper-fixture",
+          "version_id": "abstract-fixture",
+          "locator": "Abstract, sentence 1",
+          "read_level": "abstract",
+          "relation": "supports",
+          "verification": "verified",
+          "verified_at": "2026-10-04T18:42:34.259641+00:00",
+          "paraphrase": "The inspected synthetic abstract explicitly reports these fictional counts."
+        }
+      ]
+    }
+  ]
+}

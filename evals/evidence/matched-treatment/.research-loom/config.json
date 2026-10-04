@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "project_id": "c12816c9-eda8-4159-b9ca-4754b22cb3ea",
+  "stages": {
+    "interview": "research-loom-interview",
+    "narrow": "research-loom-narrow",
+    "search-plan": "research-loom-search-plan",
+    "synthesize": "research-loom-synthesize",
+    "outline": "research-loom-outline",
+    "draft": "research-loom-draft",
+    "review": "research-loom-review"
+  },
+  "search_branches": [
+    {
+      "id": "discovery",
+      "skill": "research-loom-search",
+      "source": "auto"
+    }
+  ],
+  "goals": [
+    {
+      "id": "G1",
+      "priority": 1,
+      "question": "For maintainers of small Python repositories, which AI coding-agent configurations best support correct issue fixes within a limited maintainer review budget?",
+      "search_branches": [
+        {
+          "id": "g1-evaluation",
+          "skill": "research-loom-search",
+          "source": "Semantic Scholar and OpenAlex discovery; original publisher/preprint records after discovery"
+        },
+        {
+          "id": "g1-artifacts",
+          "skill": "research-loom-search",
+          "source": "Original benchmark repositories/dataset documentation and official agent documentation, discovered via general web search"
+        },
+        {
+          "id": "g1-counterevidence",
+          "skill": "research-loom-search",
+          "source": "ACM Digital Library discovery and general web search of original maintainer reports/repositories"
+        }
+      ]
+    },
+    {
+      "id": "G2",
+      "priority": 2,
+      "question": "For issue-fix tasks in small Python repositories, does an agent-assisted workflow reduce total maintainer effort per correct accepted fix compared with a maintainer-only workflow?",
+      "search_branches": [
+        {
+          "id": "g2-workflows",
+          "skill": "research-loom-search",
+          "source": "Semantic Scholar and ACM Digital Library discovery; original full text where accessible"
+        },
+        {
+          "id": "g2-methods",
+          "skill": "research-loom-search",
+          "source": "ACM Digital Library and IEEE Xplore discovery; institutional author copies where available"
+        },
+        {
+          "id": "g2-counterevidence",
+          "skill": "research-loom-search",
+          "source": "Semantic Scholar/OpenAlex discovery and original institutional/preprint resources"
+        }
+      ]
+    }
+  ],
+  "project_root": "<WORKSPACE>/work/loom-matched-treatment"
+}

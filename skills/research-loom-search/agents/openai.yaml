@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Search"
+  short_description: "Use when executing a planned research search branch and reco"
+  default_prompt: "Use $research-loom-search for the current research project."

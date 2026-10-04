@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+  "stages": {
+    "interview": "research-loom-interview",
+    "narrow": "research-loom-narrow",
+    "search-plan": "research-loom-search-plan",
+    "synthesize": "research-loom-synthesize",
+    "outline": "research-loom-outline",
+    "draft": "research-loom-draft",
+    "review": "research-loom-review"
+  },
+  "search_branches": [
+    {
+      "id": "discovery",
+      "skill": "research-loom-search",
+      "source": "auto"
+    }
+  ],
+  "goals": [
+    {
+      "id": "goal-brief",
+      "question": "What does the supplied fictional fixture report about color preference?"
+    }
+  ],
+  "project_root": "<WORKSPACE>/work/loom-release-edge"
+}

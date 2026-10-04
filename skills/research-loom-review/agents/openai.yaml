@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Review"
+  short_description: "Use when auditing a research manuscript for supported claims"
+  default_prompt: "Use $research-loom-review for the current research project."

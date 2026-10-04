@@ -1,0 +1,15 @@
+{
+  "name": "research-loom",
+  "owner": {
+    "name": "Amaljith Kuttamath"
+  },
+  "plugins": [
+    {
+      "name": "research-loom",
+      "source": "./",
+      "description": "Interview-first research graph, selectable skills, project memory and evidence audits.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "Interview-first research skills with project memory and auditable evidence."
+}

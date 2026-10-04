@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "id": "paper-claims",
+      "title": "Claim Reconciliation",
+      "authors": [],
+      "identifiers": {
+        "repository": "langchain-ai/openwiki",
+        "path": "openwiki/workflows/claims-reconciliation.md"
+      },
+      "source_type": "repository_documentation",
+      "notes": "Nonacademic primary source; authors not inferred from repository ownership. Inspected relevant full-text sections, not every line. Mutable main reference; no pinned commit recovered.",
+      "versions": [
+        {
+          "id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T18:42:57.769929+00:00",
+          "inspected_locators": "L212-L241; L385-L415"
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "id": "search-005",
+      "goal_id": "g1",
+      "branch_id": "durability",
+      "source": "site-limited web search of github.com/langchain-ai/openwiki",
+      "query": "site:github.com/langchain-ai/openwiki \"submit_page\" \"claims\" \"pending\"",
+      "status": "executed",
+      "executed_at": "2026-10-04T18:44:25Z",
+      "execution_finished_at": "2026-10-04T18:44:27Z",
+      "timestamp_precision": "second, bracketed by actual clock tool calls around batched web.run",
+      "interface": "web.run search_query",
+      "filters": {
+        "site": "github.com/langchain-ai/openwiki"
+      },
+      "hits": [
+        {
+          "paper_id": "paper-claims",
+          "version_id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md"
+        }
+      ],
+      "artifact_path": "retest-search-response.json",
+      "attempt_number": 2,
+      "plan_path": "search-plan.json",
+      "plan_fingerprint": "7ab9d9caacc3d516f50995c9d3fc70e0fcae2f1e0a46f898b836f0fc7fc2a38b",
+      "plan_existed_before_query": true,
+      "selection_rationale": "Returned official source already inspected; retained same stable source identity. Search snippets remain discovery-only."
+    }
+  ],
+  "claims": [],
+  "goal_id": "g1",
+  "branch_id": "durability",
+  "attempt": 2,
+  "limits": [
+    "Relevant full-text evidence reused from initial source inspection; this query does not constitute fresh full-text reading."
+  ]
+}

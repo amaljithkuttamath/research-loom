@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "project_id": "c647a004-6b17-4605-a6cc-484116a85f29",
+  "brief": {
+    "deliverable": "research brief",
+    "purpose": "Summarize a supplied synthetic fixture for a release check",
+    "simulation": true
+  },
+  "confirmed_questions": {
+    "goal-brief": {
+      "question": "What does the supplied fictional fixture report about color preference?",
+      "revision": 1,
+      "confirmed": true,
+      "confirmation": "Simulated user: Yes, summarize exactly this fixture only."
+    }
+  },
+  "nodes": {
+    "goal-brief:synthesize:1": {
+      "status": "running",
+      "selected_skill": "research-loom-synthesize",
+      "output_paths": [
+        "artifacts/interrupted-brief.md"
+      ],
+      "goal_id": "goal-brief",
+      "run_id": "edge-interrupted",
+      "attempt_id": "attempt-1",
+      "question_revision": 1,
+      "dependencies": [],
+      "started_at": "2026-10-04T18:41:53.739341+00:00"
+    }
+  },
+  "active_node": "goal-brief:synthesize:1",
+  "next_action": "resume synthesis"
+}

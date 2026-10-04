@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "papers": [],
+  "searches": [
+    {
+      "id": "g1-evaluation-1",
+      "goal_id": "G1",
+      "branch_id": "g1-evaluation",
+      "source": "Semantic Scholar and OpenAlex discovery; original publisher/preprint records after discovery",
+      "query": "AI coding agents Python issue resolution patch correctness human review effort",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g1-evaluation-2",
+      "goal_id": "G1",
+      "branch_id": "g1-evaluation",
+      "source": "Semantic Scholar and OpenAlex discovery; original publisher/preprint records after discovery",
+      "query": "software engineering agents benchmark patch correctness Python small repositories",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g1-artifacts-1",
+      "goal_id": "G1",
+      "branch_id": "g1-artifacts",
+      "source": "Original benchmark repositories/dataset documentation and official agent documentation, discovered via general web search",
+      "query": "Python issue resolution benchmark dataset repository task patch tests limitations",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g1-artifacts-2",
+      "goal_id": "G1",
+      "branch_id": "g1-artifacts",
+      "source": "Original benchmark repositories/dataset documentation and official agent documentation, discovered via general web search",
+      "query": "coding agent issue fix official documentation model version sandbox tools",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g1-counterevidence-1",
+      "goal_id": "G1",
+      "branch_id": "g1-counterevidence",
+      "source": "ACM Digital Library discovery and general web search of original maintainer reports/repositories",
+      "query": "coding agents incorrect patches passing tests human review failures",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g1-counterevidence-2",
+      "goal_id": "G1",
+      "branch_id": "g1-counterevidence",
+      "source": "ACM Digital Library discovery and general web search of original maintainer reports/repositories",
+      "query": "Python coding agent maintainer review rework issue fixes",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-workflows-1",
+      "goal_id": "G2",
+      "branch_id": "g2-workflows",
+      "source": "Semantic Scholar and ACM Digital Library discovery; original full text where accessible",
+      "query": "AI coding assistant controlled experiment debugging developer time rework",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-workflows-2",
+      "goal_id": "G2",
+      "branch_id": "g2-workflows",
+      "source": "Semantic Scholar and ACM Digital Library discovery; original full text where accessible",
+      "query": "software engineering agents maintainer effort human baseline issue fixing",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-methods-1",
+      "goal_id": "G2",
+      "branch_id": "g2-methods",
+      "source": "ACM Digital Library and IEEE Xplore discovery; institutional author copies where available",
+      "query": "software maintenance experiment review correction time patch correctness measurement",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-methods-2",
+      "goal_id": "G2",
+      "branch_id": "g2-methods",
+      "source": "ACM Digital Library and IEEE Xplore discovery; institutional author copies where available",
+      "query": "developer debugging experiment crossover task difficulty time on task",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-counterevidence-1",
+      "goal_id": "G2",
+      "branch_id": "g2-counterevidence",
+      "source": "Semantic Scholar/OpenAlex discovery and original institutional/preprint resources",
+      "query": "AI coding tools developer productivity no improvement increased review effort",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    },
+    {
+      "id": "g2-counterevidence-2",
+      "goal_id": "G2",
+      "branch_id": "g2-counterevidence",
+      "source": "Semantic Scholar/OpenAlex discovery and original institutional/preprint resources",
+      "query": "AI coding experiment task contamination learning effects measurement bias",
+      "query_type": "search",
+      "status": "planned",
+      "hits": []
+    }
+  ],
+  "claims": []
+}

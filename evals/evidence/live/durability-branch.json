@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "id": "paper-claims",
+      "title": "Claim Reconciliation",
+      "authors": [],
+      "identifiers": {
+        "repository": "langchain-ai/openwiki",
+        "path": "openwiki/workflows/claims-reconciliation.md"
+      },
+      "source_type": "repository_documentation",
+      "notes": "Nonacademic primary source; authors not inferred from repository ownership. Inspected relevant full-text sections, not every line. Mutable main reference; no pinned commit recovered.",
+      "versions": [
+        {
+          "id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T18:42:57.769929+00:00",
+          "inspected_locators": "L212-L241; L385-L415"
+        }
+      ]
+    },
+    {
+      "id": "paper-code",
+      "title": "repository-run.ts",
+      "authors": [],
+      "identifiers": {
+        "repository": "langchain-ai/openwiki",
+        "path": "src/generation/repository-run.ts"
+      },
+      "source_type": "source_code",
+      "notes": "Nonacademic primary source; authors not inferred from repository ownership. Inspected relevant full-text sections, not every line. Mutable main reference; no pinned commit recovered.",
+      "versions": [
+        {
+          "id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/src/generation/repository-run.ts",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T18:42:57.769929+00:00",
+          "inspected_locators": "L285-L320; L1294-L1302; L1517-L1536"
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "id": "search-002",
+      "goal_id": "g1",
+      "branch_id": "durability",
+      "source": "site-limited web search of github.com/langchain-ai/openwiki",
+      "query": "site:github.com/langchain-ai/openwiki \"submit_page\" \"claims\" \"pending\"",
+      "status": "executed",
+      "executed_at": "2026-10-04T18:41:00Z",
+      "timestamp_note": "Approximate minute-level execution time bracketed by the subsequent clock reading of 18:41:21 UTC; not exact tool telemetry.",
+      "interface": "web.run search_query",
+      "filters": {
+        "site": "github.com/langchain-ai/openwiki"
+      },
+      "hits": [
+        {
+          "paper_id": "paper-claims",
+          "version_id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/openwiki/workflows/claims-reconciliation.md"
+        }
+      ],
+      "selection_rationale": "Selected official repository material returned in actual query results; other results omitted as unrelated or duplicate. Not exhaustive."
+    },
+    {
+      "id": "search-003",
+      "goal_id": "g1",
+      "branch_id": "durability",
+      "source": "direct follow-up access to official implementation",
+      "query": "https://raw.githubusercontent.com/langchain-ai/openwiki/main/src/generation/repository-run.ts",
+      "status": "executed",
+      "executed_at": "2026-10-04T18:42:57.769929+00:00",
+      "interface": "web.run open and find",
+      "query_type": "direct_resource_access",
+      "hits": [
+        {
+          "paper_id": "paper-code",
+          "version_id": "version-main-20261004",
+          "url": "https://github.com/langchain-ai/openwiki/blob/main/src/generation/repository-run.ts"
+        }
+      ],
+      "notes": "Follow-up source inspection, not a search-engine query."
+    }
+  ],
+  "claims": [],
+  "goal_id": "g1",
+  "branch_id": "durability",
+  "limits": [
+    "Site-restricted search; no exhaustive corpus claim."
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Narrow"
+  short_description: "Use when turning a broad research topic or several goals int"
+  default_prompt: "Use $research-loom-narrow for the current research project."

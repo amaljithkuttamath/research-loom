@@ -1,0 +1,21 @@
+# Search plan
+
+Simulated-fixture agreement only; no real-user consent inferred. This plan is the executed output of aird-search-plan. All branches use the available general web search interface; quoted strings and `site:` restrictions are ordinary search queries, not claims that a publisher's native query language has been verified. Scholar/arXiv are possible later routes rather than mandatory sources. No topical queries have run.
+
+Budget: Initial discovery, one query and up to three potentially relevant primary sources per branch, then assess saturation. Total first pass cap: 21 opened sources. G1 first. Follow citation chains only after evaluating this first pass; stop or discuss budget if unresolved evidence needs exceed it.
+
+| Goal / branch | Purpose and source | Exact initial query | Skill / evidence | Access limit / stop |
+|---|---|---|---|---|
+| G1 / implementation | Discover actual OpenWiki lifecycle and maintenance mechanics; first-party repository | `site:github.com/langchain-ai/openwiki source claims documentation lifecycle` | aird-search / source code, tests, README | Web retrieval may omit files. Stop after lifecycle and state contracts can be cited or mark missing code access. |
+| G1 / comparative-eval | Find paired verified maintenance-task evaluation; first-party eval directories | `site:github.com/langchain-ai/openwiki/evals baseline openwiki paired` | aird-search / executable harness and trial data if published | Harness describes measurement; does not establish effect without results. Stop at method plus actual result availability. |
+| G1 / drift-audit | Find evidence about changing truth and outdated claims; source-grounding methods | `repository wiki source grounding stale claims longitudinal evaluation` | aird-search / primary methods and benchmark artifacts | Separate repo code evidence from independent external validation. Stop at inspectable claim-state procedure plus caveats. |
+| G1 / contrary | Search for weak/negative documentation or skills effects; scholarly repositories and institution sites | `agent repository documentation benchmark no improvement negative results` | aird-search / primary comparative studies, contradictory findings | Preprints labeled; no proof from abstract alone. Stop after three candidates or record no contrary result found in this bounded search. |
+| G2 / terminology-review | Map debugging skill-transfer terminology; journal/institutional sources | `AI programming education debugging unassisted learning systematic review` | aird-search / review, terminology and leads | Review is a map, not substitute for original evidence. Stop after three leads to original comparative studies. |
+| G2 / original-learning | Identify direct comparative studies; publisher/institutional pages | `undergraduate programmers AI coding assistance debugging retention transfer experiment` | aird-search / empirical comparative learning studies | Abstract-only access explicitly limited; professional studies not treated as undergraduate evidence. Stop after three eligible primary studies or identify evidence gap. |
+| G2 / contradictory-outcome | Challenge expected harm; publisher/institutional pages | `AI coding assistant programming students learning improved debugging randomized study` | aird-search / beneficial/null/harm outcomes and methodological details | Do not infer learning from assisted performance. Stop after three candidates; reroute only for missing relevant outcomes. |
+
+Filters: English searchable terminology for this initial pass; no geography restriction. Prefer 2022 onward for contemporary coding assistants, retaining older methodological work via citations if necessary. No native database filter asserted. Record dates, model/intervention, population, comparator and outcome from primary text rather than search snippets.
+
+Handoff: Each executed branch must record query/time/source, documents actually accessed, canonical identifier and versions, goal ID, specific claims supported, access limits, and stopping reason. Different paper versions are linked rather than counted as independent studies. Synthesis retains G1/G2 separation. Unsupported claims remain gaps.
+
+Next action: Ready for initial G1 search branches if a real user authorizes continuation in a real project. Fixture instructed stopping here.

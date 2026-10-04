@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "project_id": "c27cb5b0-c32e-4a0b-9c79-73c54f8db22f",
+  "brief": {
+    "fixture": true,
+    "question": "How does LangChain OpenWiki separate agent research from durable queue and claim bookkeeping?",
+    "goal_id": "g1",
+    "deliverable": "synthesis",
+    "priorities": [
+      "Ownership boundary",
+      "Durability and claim lifecycle"
+    ],
+    "artifact_path": "synthesis-brief.md"
+  },
+  "confirmed_questions": {
+    "g1": {
+      "question": "How does LangChain OpenWiki separate agent research from durable queue and claim bookkeeping?",
+      "confirmation_source": "simulated user fixture supplied by parent",
+      "fixture": true,
+      "real_user_confirmation": false,
+      "revision": 1
+    }
+  },
+  "nodes": {
+    "g1:search-plan:1": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "search-plan",
+      "branch_id": null,
+      "iteration": 1,
+      "run_id": "3d482f7d-d4f3-4840-9f0b-78947285ba40",
+      "attempt_id": "a93561c6-e6d4-4901-99a6-ae389f0e8243",
+      "question_revision": 1,
+      "selected_skill": "research-loom-search-plan",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-search-plan/SKILL.md",
+      "skill_content_hash": "8119a04708a4780b814dcaa9b42178b088e9489c6722b765bf5968e0024841e7",
+      "upstream_dependencies": [],
+      "input_fingerprints": {
+        "question": "ad7bc9bddc132f22b7cc45798ac52241dde2a0283c0e07b7e1d9a455c6f77d23"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "selected_deliverable": "synthesis",
+        "search_branches": [
+          {
+            "id": "ownership",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          },
+          {
+            "id": "durability",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          }
+        ]
+      },
+      "output_paths": [
+        "search-plan.json"
+      ],
+      "completed_at": "2026-10-04T18:42:57.769929+00:00",
+      "gaps": [
+        "No immutable commit snapshot; no runtime execution."
+      ],
+      "next_action": "synthesize",
+      "validation": "artifact exists; provenance reviewed"
+    },
+    "g1:search:ownership:1": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "search",
+      "branch_id": "ownership",
+      "iteration": 1,
+      "run_id": "3d482f7d-d4f3-4840-9f0b-78947285ba40",
+      "attempt_id": "618d8402-0175-4152-bd09-902616e83e3c",
+      "question_revision": 1,
+      "selected_skill": "research-loom-search",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-search/SKILL.md",
+      "skill_content_hash": "badb9f09c515f78103f9577467caf24f46dc76cfd9da4790fbeb73615a5582bf",
+      "upstream_dependencies": [
+        "g1:search-plan:1"
+      ],
+      "input_fingerprints": {
+        "question": "ad7bc9bddc132f22b7cc45798ac52241dde2a0283c0e07b7e1d9a455c6f77d23"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "selected_deliverable": "synthesis",
+        "search_branches": [
+          {
+            "id": "ownership",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          },
+          {
+            "id": "durability",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          }
+        ]
+      },
+      "output_paths": [
+        "ownership-branch.json"
+      ],
+      "completed_at": "2026-10-04T18:42:57.769929+00:00",
+      "gaps": [
+        "No immutable commit snapshot; no runtime execution."
+      ],
+      "next_action": "synthesize",
+      "validation": "artifact exists; provenance reviewed"
+    },
+    "g1:search:durability:1": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "search",
+      "branch_id": "durability",
+      "iteration": 1,
+      "run_id": "3d482f7d-d4f3-4840-9f0b-78947285ba40",
+      "attempt_id": "418e8915-28c1-46c1-8bba-35c90349465c",
+      "question_revision": 1,
+      "selected_skill": "research-loom-search",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-search/SKILL.md",
+      "skill_content_hash": "badb9f09c515f78103f9577467caf24f46dc76cfd9da4790fbeb73615a5582bf",
+      "upstream_dependencies": [
+        "g1:search-plan:1"
+      ],
+      "input_fingerprints": {
+        "question": "ad7bc9bddc132f22b7cc45798ac52241dde2a0283c0e07b7e1d9a455c6f77d23"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "selected_deliverable": "synthesis",
+        "search_branches": [
+          {
+            "id": "ownership",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          },
+          {
+            "id": "durability",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          }
+        ]
+      },
+      "output_paths": [
+        "durability-branch.json"
+      ],
+      "completed_at": "2026-10-04T18:42:57.769929+00:00",
+      "gaps": [
+        "No immutable commit snapshot; no runtime execution."
+      ],
+      "next_action": "synthesize",
+      "validation": "artifact exists; provenance reviewed"
+    },
+    "g1:synthesize:1": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "synthesize",
+      "branch_id": null,
+      "iteration": 1,
+      "run_id": "3d482f7d-d4f3-4840-9f0b-78947285ba40",
+      "attempt_id": "7a22a3e7-fdf2-4652-a426-a6edf56fddde",
+      "question_revision": 1,
+      "selected_skill": "research-loom-synthesize",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-synthesize/SKILL.md",
+      "skill_content_hash": "394d69681107131c9c34d456455461eea1d9c57cf59347e6ef782b50bb7bc239",
+      "upstream_dependencies": [
+        "g1:search:ownership:1",
+        "g1:search:durability:1"
+      ],
+      "input_fingerprints": {
+        "question": "ad7bc9bddc132f22b7cc45798ac52241dde2a0283c0e07b7e1d9a455c6f77d23"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "selected_deliverable": "synthesis",
+        "search_branches": [
+          {
+            "id": "ownership",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          },
+          {
+            "id": "durability",
+            "skill": "research-loom-search",
+            "source": "site-limited web search of github.com/langchain-ai/openwiki"
+          }
+        ]
+      },
+      "output_paths": [
+        ".research-loom/research.json",
+        "synthesis-brief.md",
+        "validation-result.json"
+      ],
+      "completed_at": "2026-10-04T18:42:57.769929+00:00",
+      "gaps": [
+        "No immutable commit snapshot; no runtime execution."
+      ],
+      "next_action": "complete",
+      "validation": "research_data.validate passed"
+    },
+    "g1:search:ownership:2": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "search",
+      "branch_id": "ownership",
+      "iteration": 2,
+      "run_id": "e3958f5a-e140-4cc6-ab01-cb2170f3f739",
+      "attempt_id": "4f081aac-8bcb-47d5-800c-b6d200e6701f",
+      "question_revision": 1,
+      "selected_skill": "research-loom-search",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-search/SKILL.md",
+      "skill_content_hash": "badb9f09c515f78103f9577467caf24f46dc76cfd9da4790fbeb73615a5582bf",
+      "upstream_dependencies": [
+        "g1:search-plan:1"
+      ],
+      "input_fingerprints": {
+        "plan": "7ab9d9caacc3d516f50995c9d3fc70e0fcae2f1e0a46f898b836f0fc7fc2a38b"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "deliverable": "synthesis",
+        "branch": {
+          "id": "ownership",
+          "skill": "research-loom-search",
+          "source": "site-limited web search of github.com/langchain-ai/openwiki",
+          "purpose": "Establish model versus bookkeeping ownership",
+          "query": "site:github.com/langchain-ai/openwiki \"host-driven\" \"durable queue\"",
+          "filters": {
+            "site": "github.com/langchain-ai/openwiki"
+          },
+          "stopping_criterion": "One inspected official overview with explicit ownership boundary"
+        }
+      },
+      "output_paths": [
+        "ownership-branch-attempt-2.json",
+        "retest-search-response.json"
+      ],
+      "started_at": "2026-10-04T18:44:25Z",
+      "completed_at": "2026-10-04T18:44:27Z",
+      "next_action": "synthesize",
+      "protocol_note": "This attempt follows the previously persisted plan; original attempt remains nonconforming."
+    },
+    "g1:search:durability:2": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "search",
+      "branch_id": "durability",
+      "iteration": 2,
+      "run_id": "e3958f5a-e140-4cc6-ab01-cb2170f3f739",
+      "attempt_id": "852eeadc-02b7-484c-9e67-69113a46f672",
+      "question_revision": 1,
+      "selected_skill": "research-loom-search",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-search/SKILL.md",
+      "skill_content_hash": "badb9f09c515f78103f9577467caf24f46dc76cfd9da4790fbeb73615a5582bf",
+      "upstream_dependencies": [
+        "g1:search-plan:1"
+      ],
+      "input_fingerprints": {
+        "plan": "7ab9d9caacc3d516f50995c9d3fc70e0fcae2f1e0a46f898b836f0fc7fc2a38b"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "deliverable": "synthesis",
+        "branch": {
+          "id": "durability",
+          "skill": "research-loom-search",
+          "source": "site-limited web search of github.com/langchain-ai/openwiki",
+          "purpose": "Check sparse claims and durability gates",
+          "query": "site:github.com/langchain-ai/openwiki \"submit_page\" \"claims\" \"pending\"",
+          "filters": {
+            "site": "github.com/langchain-ai/openwiki"
+          },
+          "stopping_criterion": "Inspect official claims documentation and implementation for queue completion gate"
+        }
+      },
+      "output_paths": [
+        "durability-branch-attempt-2.json",
+        "retest-search-response.json"
+      ],
+      "started_at": "2026-10-04T18:44:25Z",
+      "completed_at": "2026-10-04T18:44:27Z",
+      "next_action": "synthesize",
+      "protocol_note": "This attempt follows the previously persisted plan; original attempt remains nonconforming."
+    },
+    "g1:synthesize:2": {
+      "status": "complete",
+      "goal_id": "g1",
+      "stage": "synthesize",
+      "iteration": 2,
+      "run_id": "e3958f5a-e140-4cc6-ab01-cb2170f3f739",
+      "attempt_id": "da560514-0a49-4fc2-8118-7fdf3ef3ee2a",
+      "question_revision": 1,
+      "selected_skill": "research-loom-synthesize",
+      "resolved_skill_path": "<WORKSPACE>/outputs/research-loom-bundle/research-loom-synthesize/SKILL.md",
+      "skill_content_hash": "394d69681107131c9c34d456455461eea1d9c57cf59347e6ef782b50bb7bc239",
+      "upstream_dependencies": [
+        "g1:search:ownership:2",
+        "g1:search:durability:2"
+      ],
+      "input_fingerprints": {
+        "research_json": "dd85f6c1453cff131ecda75477e4a45553f9bd674a03d2874ba30a9180fec0b5"
+      },
+      "effective_configuration": {
+        "fixture": true,
+        "deliverable": "short auditable synthesis brief; no paper"
+      },
+      "output_paths": [
+        "synthesis-brief-attempt-2.md",
+        ".research-loom/research.json",
+        "validation-result-attempt-2.json"
+      ],
+      "completed_at": "2026-10-04T18:45:29.877391+00:00",
+      "next_action": "complete",
+      "gaps": [
+        "Mutable main references; no runtime execution."
+      ],
+      "checks": [
+        "Data helper validation passed",
+        "Actual synthesis artifact produced under current skill wording",
+        "No outline/draft/review nodes created"
+      ]
+    }
+  },
+  "active_node": null,
+  "next_action": "complete",
+  "fixture": true,
+  "completion_scope": "synthesis deliverable only",
+  "latest_synthesis_path": "synthesis-brief-attempt-2.md"
+}
