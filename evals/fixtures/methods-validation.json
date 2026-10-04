@@ -1,0 +1,42 @@
+{
+  "synthetic": true,
+  "goal_id": "goal-001",
+  "question": "Does this method improve extraction of clinical trial outcomes from medical papers?",
+  "sources": [
+    {
+      "id": "paper-001",
+      "version_id": "version-001",
+      "read_level": "full_text",
+      "passages": {
+        "Methods": "A classifier extracts trial outcomes from medical papers.",
+        "Validation": "On 200 held-out medical papers, F1 was 0.82 versus baseline 0.71. The split was by paper; uncertainty and external replication are not reported."
+      }
+    },
+    {
+      "id": "paper-002",
+      "version_id": "version-002",
+      "read_level": "full_text",
+      "passages": {
+        "Methods": "The same extraction approach is applied to news articles.",
+        "Validation": "On 300 news articles, F1 was 0.88 versus baseline 0.80. No medical papers were tested."
+      }
+    },
+    {
+      "id": "paper-003",
+      "version_id": "version-003",
+      "read_level": "full_text",
+      "passages": {
+        "Methods": "A proposed rule-based extractor targets clinical trial outcomes.",
+        "Scope of inspected material": "The complete fixture paper contains a proposal and worked example only; no measured evaluation is reported."
+      }
+    },
+    {
+      "id": "paper-004",
+      "version_id": "version-004",
+      "read_level": "abstract",
+      "passages": {
+        "Abstract": "We propose a method for extracting clinical trial outcomes. Evaluation details are in the unavailable full text."
+      }
+    }
+  ]
+}

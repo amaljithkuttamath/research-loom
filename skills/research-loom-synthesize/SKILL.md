@@ -9,6 +9,8 @@ Read source ledgers and [references/evidence.md](references/evidence.md). Merge 
 
 For each focused question, organize evidence by themes, methods, contexts, and disagreements. Map claims to sources and supporting locators. Separate source findings from interpretation; abstract-only evidence supports only explicit abstract-level claims. Explain comparability and uncertainty; do not count more papers as stronger evidence by itself.
 
+For each research paper, explain the method and how the authors validated it, then assess whether that validation applies to the focused question. Read [references/evidence.md](references/evidence.md) for the small assessment record and triage categories. Ground method and validation details in inspected passages; distinguish absent validation from inaccessible evidence. Triage each gap with a reason and useful next action, without automatically discarding a paper.
+
 Deliver a per-goal synthesis, claim-evidence map, access/quality limits, and prioritized gaps. Route terminology/coverage gaps to search planning; route a changed question to narrowing and user confirmation. Otherwise state whether evidence supports the requested deliverable and return the synthesis to the orchestrator. Finish at synthesis for a research brief; suggest outlining only when a paper is requested. Do not assert novelty or causal conclusions beyond the evidence.
 
 When invoked by Research Loom, return paper/search/claim records matching [the shared paper data contract](../research-loom/references/paper-data.md). The orchestrator merges and validates them.

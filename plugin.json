@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "research-loom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Configurable research skills with project memory, auditable evidence, and release evaluations.",
   "author": {
     "name": "Amaljith Kuttamath"

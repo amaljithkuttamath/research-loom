@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "goal_id": "goal-001",
+  "question": "Does this method improve extraction of clinical trial outcomes from medical papers?",
+  "scope": "Verification means comparison against supplied synthetic excerpts, not verification of real publications or experimental replication. Fixture read levels are retained; full_text is limited to the supplied fixture passages. No searches were executed.",
+  "papers": [
+    {
+      "id": "paper-001",
+      "title": "paper-001 (synthetic fixture alias; bibliographic title unavailable)",
+      "authors": [],
+      "identifiers": {},
+      "notes": "Synthetic supplied excerpts only; no authoritative bibliography verified and no live research conducted. No study merging attempted without bibliographic identity.",
+      "versions": [
+        {
+          "id": "version-001",
+          "url": "https://github.com/amaljithkuttamath/research-loom/blob/main/evals/fixtures/methods-validation.json#paper-001",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T19:19:48Z"
+        }
+      ],
+      "assessments": [
+        {
+          "goal_id": "goal-001",
+          "version_id": "version-001",
+          "method": "A classifier extracts trial outcomes from medical papers.",
+          "reported_validation": "On 200 held-out medical papers, F1 was 0.82 versus baseline 0.71; the split was by paper. Uncertainty and external replication are not reported.",
+          "topic_fit": "Medical papers and trial outcome extraction directly match the focused question.",
+          "locators": [
+            "Methods",
+            "Validation"
+          ],
+          "triage": "direct",
+          "reason": "The inspected validation directly evaluates the requested task and reports higher F1, but supports only the reported held-out setting.",
+          "next_action": "Use within the stated limits; seek uncertainty estimates and independent medical-paper replication."
+        }
+      ]
+    },
+    {
+      "id": "paper-002",
+      "title": "paper-002 (synthetic fixture alias; bibliographic title unavailable)",
+      "authors": [],
+      "identifiers": {},
+      "notes": "Synthetic supplied excerpts only; no authoritative bibliography verified and no live research conducted. No study merging attempted without bibliographic identity.",
+      "versions": [
+        {
+          "id": "version-002",
+          "url": "https://github.com/amaljithkuttamath/research-loom/blob/main/evals/fixtures/methods-validation.json#paper-002",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T19:19:48Z"
+        }
+      ],
+      "assessments": [
+        {
+          "goal_id": "goal-001",
+          "version_id": "version-002",
+          "method": "The same extraction approach is applied to news articles.",
+          "reported_validation": "On 300 news articles, F1 was 0.88 versus baseline 0.80; no medical papers were tested.",
+          "topic_fit": "Extraction evidence in news may be background, but transfer to clinical trial outcomes is untested.",
+          "locators": [
+            "Methods",
+            "Validation"
+          ],
+          "triage": "indirect",
+          "reason": "Measured validation exists in a different domain and does not establish clinical extraction performance.",
+          "next_action": "Retain as background; propose a held-out medical-paper comparison with a stated baseline and uncertainty estimates. This experiment has not been performed in the supplied evidence."
+        }
+      ]
+    },
+    {
+      "id": "paper-003",
+      "title": "paper-003 (synthetic fixture alias; bibliographic title unavailable)",
+      "authors": [],
+      "identifiers": {},
+      "notes": "Synthetic supplied excerpts only; no authoritative bibliography verified and no live research conducted. No study merging attempted without bibliographic identity.",
+      "versions": [
+        {
+          "id": "version-003",
+          "url": "https://github.com/amaljithkuttamath/research-loom/blob/main/evals/fixtures/methods-validation.json#paper-003",
+          "publication_status": "unknown",
+          "read_level": "full_text",
+          "checked_at": "2026-10-04T19:19:48Z"
+        }
+      ],
+      "assessments": [
+        {
+          "goal_id": "goal-001",
+          "version_id": "version-003",
+          "method": "A proposed rule-based extractor targets clinical trial outcomes.",
+          "reported_validation": "No measured evaluation is reported in the complete inspected fixture paper; only a proposal and worked example are supplied.",
+          "topic_fit": "The proposed target matches the question, but performance improvement is not demonstrated.",
+          "locators": [
+            "Methods",
+            "Scope of inspected material"
+          ],
+          "triage": "absent",
+          "reason": "The complete inspected fixture explicitly reports only a proposal and worked example, so relevant measured validation is absent within this material.",
+          "next_action": "Retain as a proposal; search for independent evaluations or propose a held-out clinical-paper benchmark. Neither action nor experiment has been performed here."
+        }
+      ]
+    },
+    {
+      "id": "paper-004",
+      "title": "paper-004 (synthetic fixture alias; bibliographic title unavailable)",
+      "authors": [],
+      "identifiers": {},
+      "notes": "Synthetic supplied excerpts only; no authoritative bibliography verified and no live research conducted. No study merging attempted without bibliographic identity.",
+      "versions": [
+        {
+          "id": "version-004",
+          "url": "https://github.com/amaljithkuttamath/research-loom/blob/main/evals/fixtures/methods-validation.json#paper-004",
+          "publication_status": "unknown",
+          "read_level": "abstract",
+          "checked_at": "2026-10-04T19:19:48Z"
+        }
+      ],
+      "assessments": [
+        {
+          "goal_id": "goal-001",
+          "version_id": "version-004",
+          "method": "An extraction method for clinical trial outcomes is proposed; implementation details are unavailable in the abstract.",
+          "reported_validation": "The abstract points to evaluation details in unavailable full text; dataset, comparators, metrics, and uncertainty cannot be assessed.",
+          "topic_fit": "The stated target matches the question, but applicability of the validation cannot be determined from the abstract.",
+          "locators": [
+            "Abstract"
+          ],
+          "triage": "cannot_assess",
+          "reason": "Unavailable full text prevents assessment; the abstract does not establish that validation is absent.",
+          "next_action": "Obtain and inspect the full-text methods and evaluation before using a performance claim."
+        }
+      ]
+    }
+  ],
+  "searches": [],
+  "claims": [
+    {
+      "id": "claim-001",
+      "goal_id": "goal-001",
+      "text": "The synthetic classifier reports F1 0.82 versus baseline 0.71 on 200 held-out medical papers, split by paper.",
+      "status": "supported",
+      "evidence": [
+        {
+          "paper_id": "paper-001",
+          "version_id": "version-001",
+          "locator": "Validation",
+          "read_level": "full_text",
+          "relation": "supports",
+          "verification": "verified",
+          "verified_at": "2026-10-04T19:19:48Z",
+          "paraphrase": "The synthetic classifier reports F1 0.82 versus baseline 0.71 on 200 held-out medical papers, split by paper."
+        }
+      ]
+    },
+    {
+      "id": "claim-002",
+      "goal_id": "goal-001",
+      "text": "The synthetic news extraction evaluation reports F1 0.88 versus baseline 0.80 on 300 news articles; no medical papers were tested.",
+      "status": "supported",
+      "evidence": [
+        {
+          "paper_id": "paper-002",
+          "version_id": "version-002",
+          "locator": "Validation",
+          "read_level": "full_text",
+          "relation": "supports",
+          "verification": "verified",
+          "verified_at": "2026-10-04T19:19:48Z",
+          "paraphrase": "The synthetic news extraction evaluation reports F1 0.88 versus baseline 0.80 on 300 news articles; no medical papers were tested."
+        }
+      ]
+    },
+    {
+      "id": "claim-003",
+      "goal_id": "goal-001",
+      "text": "The complete synthetic proposal reports only a proposal and worked example, with no measured evaluation.",
+      "status": "supported",
+      "evidence": [
+        {
+          "paper_id": "paper-003",
+          "version_id": "version-003",
+          "locator": "Scope of inspected material",
+          "read_level": "full_text",
+          "relation": "supports",
+          "verification": "verified",
+          "verified_at": "2026-10-04T19:19:48Z",
+          "paraphrase": "The complete synthetic proposal reports only a proposal and worked example, with no measured evaluation."
+        }
+      ]
+    },
+    {
+      "id": "claim-004",
+      "goal_id": "goal-001",
+      "text": "The synthetic abstract proposes clinical trial outcome extraction and directs readers to evaluation details in unavailable full text.",
+      "status": "supported",
+      "evidence": [
+        {
+          "paper_id": "paper-004",
+          "version_id": "version-004",
+          "locator": "Abstract",
+          "read_level": "abstract",
+          "relation": "supports",
+          "verification": "verified",
+          "verified_at": "2026-10-04T19:19:48Z",
+          "paraphrase": "The synthetic abstract proposes clinical trial outcome extraction and directs readers to evaluation details in unavailable full text."
+        }
+      ]
+    }
+  ],
+  "execution_context": {
+    "model_identifier": "Not exposed to this worker; no model-specific performance claim.",
+    "context_overlap": "Worker received the parent task and shared repository context, then read the changed synthesis skill, evidence reference, paper-data contract, fixture, and structural validator. No release report or other workers\u2019 expected behavioral judgments were consulted. This is not a blind evaluation.",
+    "host_capabilities": "Local filesystem and Python execution were available and used. No live research, inaccessible full-text retrieval, or experimental replication was attempted; performance in another host or model remains untested."
+  }
+}

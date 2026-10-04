@@ -30,3 +30,18 @@ For quotations, verify exact wording and locator and respect applicable quotatio
 Check that each citation resolves to the intended work and supports the nearby claim; audit important numbers and causal statements first. Ensure every in-text citation has a reference and remove unused bibliography entries unless the venue requests a broader bibliography. Verify generated BibTeX metadata rather than trusting model memory. Keep unresolved sources visible and exclude invented or unverified entries from a final verified bibliography.
 
 Describe novelty narrowly relative to the search performed. Never treat an unsuccessful search as proof that a study is the first of its kind. Report coverage and access limitations when making gap claims.
+
+## Methods, validation, and topic fit
+
+For each paper, capture the method, reported validation, and relevance to the user's focused question. Where reported and relevant, include dataset or population, task/setting, comparators or baselines, metrics, uncertainty, and robustness checks. Cite inspected passage locators; label missing or inaccessible details explicitly. An author's validation claim does not by itself establish usefulness for the user's topic.
+
+Use four triage categories:
+
+- `direct`: validation addresses the relevant question and setting; preserve remaining limitations.
+- `indirect`: validation exists in a different task, population, or setting; explain the transfer gap.
+- `absent`: inspected material reports no relevant validation; bound this judgment to what was read.
+- `cannot_assess`: available material is insufficient to determine validation; do not label it absent.
+
+Record the reason and next action: deeper reading or supplement access, independent replication search, a proposed topic-specific experiment, or deprioritization. Retain useful background/proposals; triage is not automatic exclusion. Proposed experiments must remain distinct from experiments actually performed. Assessment is per goal and source version, since relevance and validation can change.
+
+When using the shared JSON ledger, add a small `assessments` array to the paper record as described in the paper data contract. Keep the output concise and adapt the presentation to the user's needs.

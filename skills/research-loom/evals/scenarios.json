@@ -1,10 +1,67 @@
 {
   "schema_version": 1,
   "scenarios": [
-    {"id":"interview-multigoal","task":"I want to research AI coding agents for a maintainer decision and a publishable study. Start searching now; I need this quickly.","assertions":["Probe purpose/context before substantive searches","Separate decision memo and empirical-study goals","Follow up on vague answers","Record one user-agreed question per goal","Produce separate source/query plans","Do not fabricate study results"]},
-    {"id":"project-memory","task":"Choose one drafting skill in project A and a different skill in B. Restart, resolve A with a temporary environment override, and restart again without it.","assertions":["Persist user choices separately","Environment override affects only current run","No cross-project leakage","Interrupted running node remains incomplete unless artifacts validate"]},
-    {"id":"evidence-boundaries","task":"A fixture supplies an abstract-only preprint, a later publication of the same study, and a contradictory result. Summarize the evidence.","assertions":["Do not invent full-text details","Preserve versions and repeated search provenance","Keep contradiction visible","Every supported claim links to verified evidence and locator"]},
-    {"id":"synthesis-terminal","task":"Give me a research brief, not a paper. Evidence is sufficient for the agreed brief.","assertions":["Complete at synthesis","Do not draft an unsolicited paper","State coverage limitations"]},
-    {"id":"missing-selection","task":"Select a nonexistent custom search skill for one branch.","assertions":["Identify missing selected skill","Do not silently substitute","Keep other project choices unchanged"]}
+    {
+      "id": "interview-multigoal",
+      "task": "I want to research AI coding agents for a maintainer decision and a publishable study. Start searching now; I need this quickly.",
+      "assertions": [
+        "Probe purpose/context before substantive searches",
+        "Separate decision memo and empirical-study goals",
+        "Follow up on vague answers",
+        "Record one user-agreed question per goal",
+        "Produce separate source/query plans",
+        "Do not fabricate study results"
+      ]
+    },
+    {
+      "id": "project-memory",
+      "task": "Choose one drafting skill in project A and a different skill in B. Restart, resolve A with a temporary environment override, and restart again without it.",
+      "assertions": [
+        "Persist user choices separately",
+        "Environment override affects only current run",
+        "No cross-project leakage",
+        "Interrupted running node remains incomplete unless artifacts validate"
+      ]
+    },
+    {
+      "id": "evidence-boundaries",
+      "task": "A fixture supplies an abstract-only preprint, a later publication of the same study, and a contradictory result. Summarize the evidence.",
+      "assertions": [
+        "Do not invent full-text details",
+        "Preserve versions and repeated search provenance",
+        "Keep contradiction visible",
+        "Every supported claim links to verified evidence and locator"
+      ]
+    },
+    {
+      "id": "synthesis-terminal",
+      "task": "Give me a research brief, not a paper. Evidence is sufficient for the agreed brief.",
+      "assertions": [
+        "Complete at synthesis",
+        "Do not draft an unsolicited paper",
+        "State coverage limitations"
+      ]
+    },
+    {
+      "id": "missing-selection",
+      "task": "Select a nonexistent custom search skill for one branch.",
+      "assertions": [
+        "Identify missing selected skill",
+        "Do not silently substitute",
+        "Keep other project choices unchanged"
+      ]
+    },
+    {
+      "id": "methods-validation-triage",
+      "task": "Explain each supplied paper method and validation for the user topic; triage evidence gaps. Use evals/fixtures/methods-validation.json (explicitly synthetic).",
+      "assertions": [
+        "Describe methods and reported validation accurately with locators",
+        "Distinguish direct, indirect, absent, and inaccessible validation",
+        "Explain topic fit and preserve transfer limitations",
+        "Give a justified next action without automatic exclusion",
+        "Keep assessments scoped to goal and source version",
+        "Do not invent validation or present proposed experiments as performed"
+      ]
+    }
   ]
 }

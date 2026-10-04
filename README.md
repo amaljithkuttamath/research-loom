@@ -97,6 +97,8 @@ Use `RLOOM_SEARCH_BRANCHES` for a JSON array of search branches. Sources are cho
 
 A future web server can read this ordinary JSON directly. No graph database is required. Search branches return separate artifacts; the orchestrator merges shared data and validates it. Structural validation does not prove scientific claim support.
 
+Paper synthesis records each method, reported validation, relevance to the focused question, and justified triage. It distinguishes direct evidence, indirect evidence, validation absent in inspected material, and insufficient access. Assessments stay scoped to the research goal and source version.
+
 [Paper data contract](skills/research-loom/references/paper-data.md)
 
 ## Evaluation and release
@@ -109,7 +111,7 @@ python3 skills/research-loom/scripts/research_data.py validate --project /path/t
 claude plugin validate --strict .
 ```
 
-The v0.1.0 report records scoped dogfooding, instruction defects found and fixed, a no-skill control, and a Claude Code smoke test. Writing/reviewer workflows and repeated statistical reliability are not certified by those checks. See [release evaluation](evals/release-report.md).
+The v0.1.0 report records scoped dogfooding, instruction defects found and fixed, a no-skill control, and a Claude Code smoke test. Writing/reviewer workflows and repeated statistical reliability are not certified by those checks. See [release evaluation](evals/release-report.md) and the [v0.1.1 methods/validation checks](evals/methods-validation-release.md).
 
 ## Design references
 
